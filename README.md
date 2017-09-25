@@ -1,4 +1,4 @@
-# [IBM Cork CoderDojo - Student Management Webapp (dojo_sma)]()
+# [IBM Cork CoderDojo - Student Management Webapp (dojo_sma)](https://dojo-sma.mybluemix.net)
 
 This is the source code repo for the on-going development of the IBM Cork CoderDojo Student Management Webapp (dojo_sma) for short, by Eric Moynihan and Michael O'Sullivan. Currently in rapid prototype phase.
 
@@ -14,7 +14,7 @@ This is a Node.js application, which uses the Express framework to implement a w
 
 NOTE: ALL development should take place on the `development` Git branch, not `master` - i.e. `git push` should only push up to `development`. Pull requests will be required for merges of changes in the `development` branch, into the `master` branch.
 
-To begin, you must have Node.js installed on your computer, as well as npm, the node package manager. Installing Node.js will install npm for you. Get the latest stable version of Node.js v6 from (https://nodejs.org/en/)
+To begin, you must have Node.js installed on your computer, as well as npm, the node package manager. Installing Node.js will install npm for you. Get the latest stable version of Node.js v6 from https://nodejs.org/en/
 
 Then, to run the application locally for development, perform the following steps:
 
