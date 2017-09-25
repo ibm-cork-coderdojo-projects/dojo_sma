@@ -7,6 +7,7 @@ This is a Node.js application, which uses the Express framework to implement a w
 ## Table of contents
 
 * [Quick Start](#quick-start)
+* [URL Endpoints for Views](#url-endpoints-for-views)
 * [Directory Structure](#directory-structure)
 
 
@@ -28,6 +29,22 @@ Then, to run the application locally for development, perform the following step
 Using `nodemon` to run the application instead of `npm start` will allow node to automatically detect changes in the application source code, and these will then be reflected immediately in your browser, without having to restart the app with npm manually after each change.
 
 Alternatively, the app is running on IBM Bluemix as a Cloud Foundry application with the node.js buildpack. Have a look by navigating to https://dojo-sma.mybluemix.net in your browser.
+
+## URL Endpoints for Views
+
+The following are the routes used by the Express routing middleware (as specified in `routes/index.js`) which connect URLs accessed in the browser to the `controllers/students.js` controller, which in turn render the appropriate view from the `views` directory.
+
+* `http://<domain>:<port>/` -> Index page - loads the `student-list.pug` view, which will show the list of all students.
+* `http://<domain>:<port>/student` -> Student Details page - loads the `student-info.pug` view, which will show all the details of of a given student.
+* `http://<domain>:<port>/student/add` -> Add New Student page - loads the `add-student-form.pug` view, which presents a form to be filled in when adding a new student (current form action goes nowhere).
+
+For local development:
+
+`<domain>` will be `localhost`, and `<port>` will be `3000`.
+
+To view live on the IBM Bluemix Cloud:
+
+`<domain>` will be `dojo-sma.mybluemix.net`, and `<port>` should not be specified.
 
 ## Directory Structure
 
